@@ -5,16 +5,16 @@ import Nav from '../components/nav'
 const Home = () => (
   <div>
     <Head>
-      <title>Home</title>
+      <title>Ninjabou's Treasure Cave</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <Nav />
 
     <div className="hero">
-      <h1 className="title">Welcome to Next.js!</h1>
+      <h1 className="title">Welcome to Ninjabou's secret treasure cave.</h1>
       <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
+        Host to the neighbor's cat when no one knows where it is.
       </p>
 
       <div className="row">
@@ -46,7 +46,7 @@ const Home = () => (
         width: 100%;
         padding-top: 80px;
         line-height: 1.15;
-        font-size: 48px;
+        font-size: 36px;
       }
       .title,
       .description {
