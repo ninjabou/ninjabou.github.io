@@ -1,10 +1,5 @@
-import { ParticlesBg } from "particles-bg-vue";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './app.js';
 
-Vue.component('particles-bg', ParticlesBg);
-
-var app = new Vue({
-    el: '#app',
-    components: {
-        ParticlesBg
-    }
-});
+ReactDOM.render(<App />, document.getElementById('app'));
