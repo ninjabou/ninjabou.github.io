@@ -1,8 +1,14 @@
-var app = new Vue({ 
+import { ParticlesBg } from "particles-bg-vue";
+export default {
+    name: "App",
+    components: {
+        'particles-bg': ParticlesBg
+    }
+};
+
+var app = new Vue({
     el: '#app',
-    data: {
-        message: 'Hello Vue!'
+    components: {
+        'particles-bg': ParticlesBg
     }
 });
-
-app.message = 'I\'ve changed the data!';
