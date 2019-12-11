@@ -6,11 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export -o ./docs"
+    "export": "next build && next export -o docs"
   },
   "dependencies": {
     "next": "9.1.5",
     "react": "16.12.0",
-    "react-dom": "16.12.0"
+    "react-dom": "16.12.0",
+    "react-particles-js": "^2.7.0"
   }
 }

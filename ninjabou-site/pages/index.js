@@ -1,20 +1,40 @@
-import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React from 'react';
+import Head from 'next/head';
+import Nav from '../components/nav';
+import Particles from 'react-particles-js';
 
 const Home = () => (
   <div>
     <Head>
-      <title>Home</title>
+      <title>Ninjabou's Treasure Cave</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Nav />
-
-    <div className="hero">
-      <h1 className="title">Welcome to Next.js!</h1>
+    <div style={{position: 'absolute', height: '100%', width: '100%', zIndex: '1'}}>
+      <Particles
+        params={{
+          particles: {
+            number: {
+              value: 50
+            },
+            size: {
+              value: 3
+            },
+            color: {
+              value: '#000000'
+            },
+            line_linked: {
+              color: '#000000',
+              distance: '200'
+            }
+          }
+        }}
+      />
+    </div>
+    <div className="hero" style={{position: 'absolute', zIndex: '2'}}>
+      <h1 className="title">Ninjabou's Secret Treasure Cave</h1>
       <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
+        Host to the neighbor's cat when no one knows where it is
       </p>
 
       <div className="row">
@@ -37,6 +57,11 @@ const Home = () => (
     </div>
 
     <style jsx>{`
+      :global(body) {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
+          Helvetica, sans-serif;
+      }
       .hero {
         width: 100%;
         color: #333;
@@ -53,8 +78,9 @@ const Home = () => (
         text-align: center;
       }
       .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -66,6 +92,7 @@ const Home = () => (
         text-decoration: none;
         color: #434343;
         border: 1px solid #9b9b9b;
+        background-color: #ffffff;
       }
       .card:hover {
         border-color: #067df7;
