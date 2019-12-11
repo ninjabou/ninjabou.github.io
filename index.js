@@ -1,14 +1,10 @@
 import { ParticlesBg } from "particles-bg-vue";
-export default {
-    name: "App",
-    components: {
-        'particles-bg': ParticlesBg
-    }
-};
+
+Vue.component('particles-bg', ParticlesBg);
 
 var app = new Vue({
     el: '#app',
     components: {
-        'particles-bg': ParticlesBg
+        ParticlesBg
     }
 });

@@ -1,4 +1,12 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<div id="app">
-    <particles-bg color="#ff0000" num=200 type="circle" :bg={true} />
-</div>
+<template>
+    <particles-bg type="lines" :bg="true" />
+</template>
+<script>
+    import ParticlesBg from "particles-bg-vue";
+    export default {
+        components: {
+            ParticlesBg,
+        },
+    }
+</script>
