@@ -120,6 +120,13 @@ class Home extends React.Component {
                   </b>
                 </p>
               </a>
+              <a href='https://github.com/ninjabou' style={{textDecoration: 'none', color: '#fc03f8'}}>
+                <p style={{textAlign: 'center'}}>
+                  <b>
+                    Github
+                  </b>
+                </p>
+              </a>
             </div>
           </Animated>
         </div>
