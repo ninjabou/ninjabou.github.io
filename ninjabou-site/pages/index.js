@@ -61,7 +61,7 @@ class Home extends React.Component {
       <div>
         <Head>
           <title>Ninjabou's Treasure Cave</title>
-          <link rel="icon" href='../public/favicon.ico' />
+          <link rel="shortcut icon" type="image/x-icon" href='favicon.ico' />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
         </Head>
 
