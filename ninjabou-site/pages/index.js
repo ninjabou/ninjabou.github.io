@@ -89,7 +89,7 @@ class Home extends React.Component {
         </canvas>
         <div className="hero" style={{position: 'absolute', zIndex: '2'}}>
           <Animated animationIn="fadeInUp">
-            <div style={{backgroundColor: '#fff', border: '5px solid #0d0d0d', boxShadow: "5px 5px 0px #0d0d0d", width: '35%', height: '50%', margin: 'auto', marginTop: '12%'}}>
+            <div style={{backgroundColor: '#fff', border: '5px solid #0d0d0d', boxShadow: "5px 5px 0px #0d0d0d", width: '650px', height: '50%', margin: 'auto', marginTop: '12%'}}>
               <div style={{display: 'flex', flexDirection: 'row', margin: '0 auto'}}>
                 <img src='https://pbs.twimg.com/profile_images/1096893530671321091/H_2cS88j_400x400.png' style={{margin: '10px', width: '10%', height: '10%', borderRadius: '100%', border: '5px solid #0d0d0d'}}/>
                 <div style={{display: 'flex', flexDirection: 'column', marginLeft: '5px'}}>
