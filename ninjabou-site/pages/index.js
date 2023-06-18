@@ -65,28 +65,8 @@ class Home extends React.Component {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
         </Head>
 
-        <canvas style={{position: 'absolute', height: '100%', width: '100%', zIndex: '1'}} ref='background'>
-          {/* <Particles
-            params={{
-              particles: {
-                number: {
-                  value: 50
-                },
-                size: {
-                  value: 3
-                },
-                color: {
-                  value: '#000000'
-                },
-                line_linked: {
-                  color: '#000000',
-                  distance: '200'
-                }
-              }
-            }}
-          /> */}
-
-        </canvas>
+        <canvas style={{position: 'absolute', height: '100%', width: '100%', zIndex: '1'}} ref='background'/>
+        
         <div className="hero" style={{position: 'absolute', zIndex: '2'}}>
           <Animated animationIn="fadeInUp">
             <div style={{backgroundColor: '#fff', border: '5px solid #0d0d0d', boxShadow: "5px 5px 0px #0d0d0d", width: '650px', height: '50%', margin: 'auto', marginTop: '12%'}}>

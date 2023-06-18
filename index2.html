@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <title>Devin Rooney's Portfolio</title>
+    </head>
+    <body>
+        <style>
+            * {
+                font-family: NotoSans;
+            }
+            @font-face {
+                font-family: NotoSans;
+                src: url(NotoSans-Regular.ttf);
+            }
+            body {
+                margin: 0;
+                overflow-x: hidden;
+            }
+            .card > div > img {
+                max-width: 100%;
+                max-height: 100%;
+                border: 5px solid black;
+                /* padding: 5px; */
+            }
+            p {
+                margin: 0;
+            }
+            #center {
+                display: flex;
+                flex-direction: column;
+                /* height: 100vh; */
+                margin-top: 20vh;
+                width: 100vw;
+                align-items: center;
+                justify-content: center;
+            }
+            .card {
+                border: 5px solid black;
+                background-color: white;
+                padding: 20px;
+                box-shadow: 5px 5px black;
+                width: 500px;
+                margin-top: 40px;
+            }
+            .title {
+                margin-bottom: 10px;
+                font-weight: bold;
+                font-size: 35px;
+            }
+            .subtitle {
+                font-size: 15px;
+            }
+            .skills::before{
+                position: absolute;
+                content: "Skills";
+                font-weight: bold;
+                display: inline-block;
+                transform: translate(calc(-100% - 55px), 0px);
+            }
+            .projects::before{
+                position: absolute;
+                content: "Projects";
+                font-weight: bold;
+                text-align: right;
+                transform: translate(calc(-100% - 55px), 0px);
+            }
+            .about::before{
+                position: absolute;
+                content: "About Me";
+                font-weight: bold;
+                text-align: right;
+                transform: translate(calc(-100% - 55px), 0px);
+            }
+            table {
+                margin-top: 20px;
+                width: 100%;
+            }
+            .github {
+                position: fixed;
+                left: 20px;
+                top: 20px;
+                opacity: 0.5;
+            }
+            .github:hover {
+                opacity: 1;
+            }
+            .bg {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: lightgrey;
+                z-index: -100;
+            }
+        </style>
+
+        <div class="bg"></div>
+        <div class="github">
+            <a href="https://github.com/ninjabou"><img src="GitHub-Mark-120px-plus.png" width="45px"></a>
+        </div>
+        <div id="center">
+
+            <!-- HEADER -->
+
+            <div class="title">Devin Rooney</div>
+            <div class="subtitle">CS Graduate</div>
+            <div class="subtitle"><a href="mailto:devroo2000@gmail.com">devroo2000@gmail.com</a></div>
+
+            <!-- ABOUT -->
+
+            <div class="card about">
+                I'm a recent graduate of George Mason University with a bachelor's degree in Applied Computer Science (3.67).<br>
+                I'm eager to start my career and learn from industry professionals.
+            </div>
+
+            <!-- SKILLS -->
+
+            <div class="card skills">
+                <p>Below is a list of programming languages along with my relative skill level.</p>
+                <table>
+                    <tr>
+                        <th style="padding-bottom: 20px">Language</th>
+                        <th style="width: 75%; padding-bottom: 20px">Skill</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end; padding-right: 23px;">Java</td>
+                        <td><div style="height: 1em; width: 100%; background-color: black;"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end; padding-right: 23px;">Javascript</td>
+                        <td><div style="height: 1em; width: 100%; background-color: black;"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end; padding-right: 23px;">C#</td>
+                        <td><div style="height: 1em; width: 75%; background-color: black;"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end; padding-right: 23px;">C</td>
+                        <td><div style="height: 1em; width: 75%; background-color: black;"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end; padding-right: 23px;">C++</td>
+                        <td><div style="height: 1em; width: 50%; background-color: black;"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end; padding-right: 23px;">Rust</td>
+                        <td><div style="height: 1em; width: 25%; background-color: black;"></div></td>
+                    </tr>
+                  </table>
+                  <p style="margin-bottom: 10px; margin-top: 30px; text-align: center; font-weight: bold;"> Other Technologies</p>
+                  <p style="text-align: center;">Git, GDB, React, Node, HTML/CSS, Linux, Docker, Unity, Godot</p>
+            </div>
+
+            <!-- PROJECTS -->
+
+            <div class="card projects">
+                <p style="font-weight: bold;"><a href="https://github.com/ninjabou/TimeZoneTwo">TimeZoneTwo</a></p><br>
+                <p>A discord bot that converts times between timezones.</p>
+                <p>The current version is a rewrite that utilizes Discord slash commands, hence the name.</p><br>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="tzt_screen1.png">
+                    <img src="tzt_screen2.png" style="margin-top: 20px;">
+                </div>
+            </div>
+            <div class="card">
+                <p style="font-weight: bold;">Ray Tracers</p><br>
+                <p>Combination and application of Linear Algebra and Programming concepts. Produces realistic reflections with few lines of code.</p>
+                <p>Created for GMU's Visual Computing and Computer Graphics classes.</p><br>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="rt_screen1.png" style="width: 50%;">
+                    <img src="rt_screen2.png" style="width: 75%; margin-top: 20px;">
+                </div>
+            </div>
+            <div class="card" style="margin-bottom: 20vh;">
+                <p style="font-weight: bold;">Games</p><br>
+                <p>Experience with Unity (with XRToolkit) and Godot.</p>
+                <p>Created for GMU's Virtual Reality and Game Programming II classes.</p><br>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="hwc_screen1.gif" style="width: 75%;">
+                    <img src="ffgpgxu_screen1.png" style="width: 85%; margin-top: 20px;">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
